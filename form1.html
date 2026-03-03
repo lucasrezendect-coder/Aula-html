@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 01 - Formulario</title>
+    <style type = text/css> 
+        label{
+            Display: inline-block; 
+            width: 150px;     
+        }
+        input[type="text"] 
+        {
+            background-color: yellow;
+            font-weight: bold;
+            border-radius: 20px;
+            padding: 0px 20px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <address> Lucas Rezende </address>
+    <form action="#"> 
+        <fieldset>
+            <!-- Poe os nomes-->
+            <legend> Dados Pessoais</legend>
+            <label>Nome:</label>
+            <input name="nome" type="text" maxlength="40" size="40" placeholder="Nome"/>
+            
+            <br></br>
+            <!--escolher a senha-->
+            <label>Senha(4 caracteres) :</label>
+            <input name="senha" type="password" maxlength="4" size="4"/>
+            <br></br>
+            <!-- escolhe os itens por caixa-->
+            <label>Escolha os itens aplicaveis</label>
+            <input name="video" type="checkbox" /> Placa de video
+            <input name="memoria" type="checkbox" /> Memória
+            <input name="caixa de som" type="checkbox" /> Caixa de soms
+            <br></br>
+            <!-- escolhe o sexo-->
+            <label>Sexo</label>
+            
+            <LABEL>
+                <input name="sexo" type = radio value = M /> Masculino
+            </LABEL>   
+            
+            <LABEL>
+                <input name="sexo" type = radio value = f /> Feminino
+            </LABEL>
+           
+            <LABEL>
+                <input name="sexo" type = radio value = o /> outro
+            </LABEL>
+        <br></br>
+            <label>Estado Civil</label>
+
+            <LABEL>
+                <input name="EstadoCivil" type = radio value = S /> Solteiro/a
+            </LABEL>   
+            
+            <LABEL>
+                <input name="EstadoCivil" type = radio value = C /> Casado/a
+            </LABEL>
+           
+            <LABEL>
+                <input name="EstadoCivil" type = radio value = v /> Viuvo/a
+            </LABEL>
+            
+    
+            <br></br>
+                
+        </fieldset>
+        <br></br> <br></br>
+        <fieldset>
+            <legend> estado </legend>
+            <select name = estado>
+                <option> Paraná</option>
+                <option> São Paulo</option>
+                <option> Santa Catarina</option>
+            </select>
+
+
+
+            
+    
+
+
+        </fieldset>
+        <br></br>
+        <label>Suco</label>
+        <select>
+            <optgroup label = fruta>
+             <option> laranja</option>
+             <option> abacaxi</option>
+             <option> morango</option>    
+            </optgroup>
+            <optgroup label = mistura>
+                <option> agua</option>
+                <option> leite</option> 
+               </optgroup>
+        </select>
+        <br></br>
+        </form>
+</body>
+</html>
